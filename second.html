@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+<head>
+
+</head>
+<body>
+	<script type="text/javascript">
+	//return statement
+	function a(){
+		return "something";
+		}
+	document.write(a());
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//return statement
+	function addNumbers(a,b){
+		var c = a+b;
+		return c;
+		}
+	document.write(addNumbers(3,6));
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//calling a function from another function
+	function doFirst(){
+		document.write(" do first ");
+		}
+	function doSecond(){
+		document.write(" do second ");
+		}
+	function start(){
+		doFirst();
+		doSecond();
+		}
+	start();
+	</script>	
+<hr />	
+	<script type="text/javascript">
+	//global & Local variables
+		var name = " Local variables ";
+		
+		function zxc(){
+			document.write(name);
+		}
+		
+		zxc();
+		document.write(name);
+		
+	</script>	
+<hr />	
+	<script type="text/javascript">
+	//global & Local variables (inside function)
+		function zxcv(){
+			var name2 = " Inside function ";
+			document.write(name2);
+		}
+		
+		zxcv();
+		document.write(name2);
+		
+	</script>	
+<hr />	
+	<script type="text/javascript">
+	//Math Operators
+	//var apples = 100 + 54 * 3 /10;
+	//var apples = 56 % 3;
+	var apples = 7;
+	//apples = apples + 1;
+	//apples++;
+	apples--;
+	
+	document.write(apples);
+		
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//Assignment Operators
+	var age = 35;
+	age += 54; 
+	age -= 10;
+	age *= 10;
+	age /= 5;
+	document.write(age);
+		
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//if statement
+	var tomatoes = 53;
+	var grapes = 53;
+
+	/*if(tomatoes==grapes){
+		document.write("same numbers");*/
+	/*if(tomatoes!=grapes){
+		document.write("not equal");*/
+	/*if(tomatoes>grapes){
+		document.write("suurempi");*/
+	/*if(tomatoes<grapes){
+		document.write("pienempi");*/	
+	if(tomatoes>=grapes){
+		document.write("suurempi tai sama");	
+	}
+	</script>	
+<hr />	
+	<script type="text/javascript">
+	//if/else statement
+	var blue = 437;
+	var red = 43;
+	
+	//if(2==62){
+	//if(blue==red){
+	//if(blue!=43){ //if not true is true
+	//if (blue>red){ //suurempi
+	if (blue<red){ //pienempi
+		document.write("true");
+	}else{
+		document.write("not true");
+	}
+	
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//nesting
+	var firstName = "John";
+	var lastName = "Brown";
+	
+	if(firstName=="John"){
+		if(lastName=="Smith"){
+			document.write("Welcome John Smith");			
+		}else{
+			document.write("Hello John someone");
+		}
+	}
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//Complex Conditions
+	var first = "eka";
+	var last = "toka";
+	var third = "kolmas";
+	
+	if(  (first=="eka") || (last=="toka") || (third=="kolmas") ){ //|| OR only one needs to be true
+		document.write("OR");
+	/*if(  (first=="eka") && (last=="toka") && (third=="kolmas") ){ //&& testaa molemmat +lisää
+		document.write("ALL TRUE");*/		
+	}
+	
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//Switch
+	var city = "Helsinki";
+	
+	switch(city){
+		case "Oulu":
+			document.write("Oulu");
+			break;
+		case "Tampere":
+			document.write("Tampere");
+			break;	
+		default:
+			document.write("Default text, no case");
+	}
+
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//for Loop
+		for(x=0;x<10;x++){
+			document.write("Nunc at euismod dui. <br >");
+		}
+	
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//while Loop
+		var x = 1;
+		
+		while(x<10){
+			document.write(x + " text <br >");
+			x++;
+		}	
+	</script>
+<hr />	
+	<script type="text/javascript">
+	//do while
+	var x = 5;
+	
+	do{
+		document.write(x + " Hello! <br />");
+		x++;
+	}while(x<=10);
+	</script>
+<hr />	
+	<form><!--Event Handlers-->
+		<input type="button" value="Press"  onClick="alert('11111');alert('2222');"/>
+	</form>	
+</body>
+
+</html>

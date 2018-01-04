@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+<head>
+<!--own objects 25-->
+	<script type="text/javascript">
+		function person(name, age){
+			this.name = name;
+			this.age = age;			
+		} 
+		//new instance
+		var aku = new person("Aku Ankka", 40);
+		var iines = new person("Iines Ankka", 30);
+	</script>
+	<!--Object Initializer 26-->
+	<script type="text/javascript">
+		volvo = {car:"Volvo", vm:1990};
+		lada = {car:"Lada", vm:2000};
+	</script>
+
+</head> 
+<!--onMouseOver & onLoad-->
+<!--<body onUnload="alert('goodbye');">-->
+<!--<body onLoad="alert('wellcome');">-->
+	
+Test Test Test	
+	<!--onMouseOver & onLoad-->
+	<!--<a href="http://google.com" onMouseOver="alert('MouseOver');">Go to google</a>-->
+	<!--<a href="http://google.com" onMouseOut="alert('MouseOut');">Go to google</a>-->	
+<hr />	
+<body> 
+<!--Object Initializer 26-->
+	<script type="text/javascript">
+		document.write(volvo.car + " vuosimalli " + lada.vm);
+	</script>
+<hr />	
+<!--own objects 25-->
+	<script type="text/javascript">
+		document.write(" iines: ");
+		document.write(iines.name);
+		document.write(" aku: ");
+		document.write(aku.age);
+	</script>
+<hr />	
+<!--Objects-->
+	<script type="text/javascript">
+		var abc = " qwerty";
+		document.write(abc.length); //document=object write=method
+	</script>
+<hr />	
+</body>
+
+</html>

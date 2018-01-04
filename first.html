@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+<head>
+
+</head>
+<body>
+	<script type="text/javascript">
+		<!--for older browsers
+			document.write("Test1");
+			document.write("Test2");//-->
+//comment
+/*or multiple lines*/
+	</script>
+<hr />
+	<script type="text/javascript">
+	//variables desimal, negative... 
+		var x = -23.637884;
+		document.write(x);
+	</script>
+<hr />
+	<script type="text/javascript">
+	//variables text
+		var x = "Test,\"Lorem ipsum dolor sit amet\" ";
+		document.write(x);
+	</script>
+<hr />
+	<script type="text/javascript">
+	//variables boolean, null....
+		var x = null;
+		document.write(x);
+	</script>
+<hr />
+	<script type="text/javascript">
+	//variables with Strings
+		var name = "Nimi";
+		var age = 30;
+		document.write(name + " consectetur adipiscing elit " + age);
+	</script>
+<hr />
+	<script type="text/javascript">
+	//variables with Strings
+		var name = "Nimi";
+		var age = "ikä";
+		var address = "osoite";
+		document.write(name+age+address);
+	</script>
+<hr />
+	<script type="text/javascript">
+	//Functions
+	function viesti(){
+		alert("abcdefg");
+	}
+	viesti();
+	</script>
+<form>
+	<input type="button" value="viestiin" onclick="viesti()">
+</form>	
+<hr />
+	<script type="text/javascript">
+	//Parameters with function
+	function testing(y){
+		alert("toinen viesti " + y);
+		}
+	/*testing("abc");
+	testing("def");
+	testing("ghi");*/
+	</script>
+<hr />
+	<script type="text/javascript">
+	//functions with multiple parameters
+	function a(one, two){
+		document.write(one + " is better than " + two + "<br />"); 
+		}
+	a("123", "456");
+	a("abc", "efg");
+	</script>	
+</body>
+
+</html>

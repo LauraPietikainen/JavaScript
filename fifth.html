@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+<head>
+<!--Form validation-->
+	<script type="text/javascript">
+	
+		function validator(){
+			if(document.CheckboxForm.theBox.checked)
+				alert("Checked!");
+			else
+				alert("Not Checked!");
+		
+		}	
+	</script>
+</head> 
+<body> 
+	<!--Form validation-->
+	<form name="CheckboxForm">
+		<input type="checkbox" name="theBox" />
+		<input type="button" value="Press!" onClick="validator()" />
+	</form>	
+<hr />
+	<!--Print Array Elements-->
+	<script type="text/javascript">
+	  
+		var foods = new Array("apples", "pears", "cheese", "kale", "lemons");
+		foods.sort(); //abc order
+		
+		for(i=0;i<foods.length;i++){ 
+			document.write(foods[i] + "<br />");
+			}
+		
+	</script>		
+<hr />
+<!--Associative Arrays-->
+	<script type="text/javascript">
+	 
+		var stuff = new Array();
+		stuff["color"] = "red";
+		stuff["food"] = "apple";
+		
+		document.write("favourite food is " + stuff["food"] + "<br />");
+		document.write("favourite color is " + stuff["color"]);
+		
+	</script>
+<hr />
+<!--Math Objects-->
+	<script type="text/javascript">
+	 
+		document.write(Math.PI + "<br />"); //pi
+		document.write(Math.E + " <br />");//Euler's number
+		
+		/*var n = prompt("Enter a number", "");
+		
+		var answer = Math.sqrt(n);//neliöjuuri
+		alert("The square root of " + n + " is " + answer);*/
+	</script>
+<!--Date Objects-->
+	<script type="text/javascript">
+	 
+		/*function doSomething(){
+		document.write("xxx ");
+		
+		}
+		setInterval("doSomething()", 1000); //ms tulostaa 1s välein xxx*/
+		
+	/*Time print interval 1 sec--------------------------------------------------------------------
+		function printTime(){
+			var now = new Date();
+			var hours = now.getHours();
+			var mins = now.getMinutes();
+			var seconds = now.getSeconds();
+			document.write(hours+":"+mins+":"+seconds+"<br />");
+			}
+		setInterval("printTime()",1000);*/
+	</script>		
+<hr />	
+<!--Accessing Forms-->
+	<form>
+	
+		Username <input type="text" />
+		Password <input type="text" />
+		<input type="submit" value="Submit!" />
+	
+	</form>
+	<script type="text/javascript">
+		var x = document.forms[0].length; //[0] = form1
+		document.write(x);//form components count
+	 
+	</script>
+<hr />	
+<!--Accessing Form Elements-->
+	<form name="personForm">
+		Username: <input type="text" name="username"/>
+		Password: <input type="password" name="password"/>
+		<input type="submit" value="Submit!" />
+	</form>
+	
+	<script type="text/javascript">
+		var y = document.forms[1].elements[0].name;//forms[1] koska yläpuolella on toinen form!
+		var x = document.personForm.username.name;//sama toisin
+		document.write(y + "<br />");
+		document.write(x);
+	 
+	</script>
+<hr />	
+															
+</body>
+
+</html>
